@@ -30,6 +30,10 @@ header {
   display: none;
 }
 
+.logo-text-desktop {
+  display: none;
+}
+
 .logo-text {
   font-weight: bold;
   text-transform: uppercase;
@@ -88,6 +92,10 @@ main {
   vertical-align: middle;
 }
 
+.index-banner-img {
+  
+}
+
 .index-banner-text h1 {
   color: white;
   text-align: center;
@@ -142,7 +150,7 @@ footer h3 {
 
 /*---TABLET AND DESKTOP---*/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 834px) {
 
 /*HEADER SECTION*/
 .logo-img {
@@ -165,6 +173,13 @@ footer h3 {
 }
 */
 
+.logo-text-desktop {
+  display: block;
+  margin: 15px 0 0 145px;
+  border-left: solid #111 3px;
+  padding-left: 30px;
+}
+
 .logo-text {
   display: none;
 }
@@ -175,7 +190,8 @@ body header {
 }
 
 body header nav ul {
-  margin-top: 10px;
+  margin-top: -60px;
+  margin-right: 50px;
 }
 
 body header nav ul li a {
@@ -185,7 +201,7 @@ body header nav ul li a {
 body header nav ul li a:hover {
   margin-top: 10px;
   font-weight: bold;
-  font-size: 31px;
+  font-size: 30px;
 }
 
 .index-banner {
