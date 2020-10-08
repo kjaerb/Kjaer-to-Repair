@@ -3,13 +3,16 @@
   margin: 0;
   list-style: none;
   text-decoration: none;
-  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
 
 header {
   height: 100px;
-  border-bottom: 2px solid black;
+  -webkit-box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.2);
+  background-color: white;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -21,47 +24,70 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 10%;
 }
 
-header .nav-container {
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo img {
+  height: 75px;
+  padding-right: 10px;
+}
+
+header .logo h3 a {
+  text-transform: uppercase;
+  color: #282828;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+header nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin: 0 auto;
 }
 
-header .nav-container h3 a {
-  text-transform: uppercase;
-  color: orange;
-  font-weight: bold;
-}
-
-header .nav-container .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header .nav-container .nav-links li {
+header nav .nav-links li {
   padding: 0 20px;
 }
 
-header .nav-container .nav-links li a {
-  color: black;
+header nav .nav-links li a {
+  color: #282828;
+  font-weight: bold;
 }
 
-header .nav-container .contact-button {
+header nav .nav-links li button {
   padding: 9px 25px;
-  background-color: orange;
+  background-color: #f2703c;
   border: none;
   border-radius: 50px;
+  font-size: 16px;
   cursor: pointer;
+}
+
+header nav .nav-links li .cta button {
+  color: white;
+}
+
+header .burger {
+  display: none;
 }
 
 main {
@@ -70,7 +96,10 @@ main {
 
 footer {
   height: 100px;
-  background-color: black;
+  background-color: #282828;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -83,13 +112,5 @@ footer {
 
 footer p {
   color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 /*# sourceMappingURL=index.css.map */

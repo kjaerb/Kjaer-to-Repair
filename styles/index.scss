@@ -1,54 +1,74 @@
 //Reset SCSS
 
+@import "variables.scss";
+
 * {
     padding: 0;
     margin: 0;
     list-style: none;
     text-decoration: none;
-    overflow: hidden;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
 header {
-    height: 100px;
-    border-bottom: 2px solid black;
+    height: $header-height;
+    box-shadow: 0 3px 2px -2px rgba(0,0,0,.2);
+    background-color: white;
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0 10%;
-    .nav-container {
+    .logo {
         display: flex;
+        justify-content: center;
         align-items: center;
-        justify-content: space-between;
+        img {
+            height: 75px;
+            padding-right: 10px;
+        }
         h3 {
             a {
             text-transform: uppercase;
-            color: orange;
+            color: $nice-black;
             font-weight: bold;
+            font-size: 25px;
             }
         }
+    }
+    nav {
         .nav-links {
             display: flex;
+            align-items: center;
+            margin: 0 auto;
             li {
                 padding: 0 20px;
                 a {
-                    color: black;
+                    color: $nice-black;
+                    font-weight: bold;
+                }
+                button {
+                    padding: 9px 25px;
+                    background-color: $orange;
+                    border: none;
+                    border-radius: 50px;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+                .cta {
+                    button {
+                        color: white;
+                    }
                 }
             }
         }
-        .contact-button {
-            padding: 9px 25px;
-            background-color: orange;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-        }
-        .burger {
-    
-        }
+    }
+    .burger {
+        display: none;
     }
 }
 
@@ -58,14 +78,12 @@ main {
 
 footer {
     height: 100px;
-    background-color: black;
+    background-color: $nice-black;
+    display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
     p {
         color: white;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
     }
 }
