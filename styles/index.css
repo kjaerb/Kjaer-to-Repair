@@ -37,21 +37,24 @@ header .logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 300px;
 }
 
 header .logo img {
-  height: 75px;
+  height: 62.5px;
   padding-right: 10px;
 }
 
 header .logo h3 a {
   text-transform: uppercase;
-  color: #282828;
+  color: #f2703c;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 header nav .nav-links {
@@ -70,7 +73,6 @@ header nav .nav-links li {
 
 header nav .nav-links li a {
   color: #282828;
-  font-weight: bold;
 }
 
 header nav .nav-links li button {
@@ -80,13 +82,19 @@ header nav .nav-links li button {
   border-radius: 50px;
   font-size: 16px;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header nav .nav-links li button:hover {
+  background-color: #da6900;
 }
 
 header nav .nav-links li .cta button {
   color: white;
 }
 
-header .burger {
+.burger {
   display: none;
 }
 

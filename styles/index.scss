@@ -26,17 +26,19 @@ header {
     .logo {
         display: flex;
         justify-content: center;
+        align-content: center;
         align-items: center;
+        width: 300px;
         img {
-            height: 75px;
+            height: 62.5px;
             padding-right: 10px;
         }
         h3 {
             a {
             text-transform: uppercase;
-            color: $nice-black;
+            color: $orange;
             font-weight: bold;
-            font-size: 25px;
+            font-size: 22px;
             }
         }
     }
@@ -49,7 +51,6 @@ header {
                 padding: 0 20px;
                 a {
                     color: $nice-black;
-                    font-weight: bold;
                 }
                 button {
                     padding: 9px 25px;
@@ -58,10 +59,15 @@ header {
                     border-radius: 50px;
                     font-size: 16px;
                     cursor: pointer;
+                    transition: 0.3s;
+                    &:hover {
+                        background-color: $orange-darker;
+                    }
                 }
                 .cta {
                     button {
-                        color: white;
+                        color: white;                    
+                        }
                     }
                 }
             }
@@ -70,13 +76,13 @@ header {
     .burger {
         display: none;
     }
-}
 
 main {
     height: 100vh;
 }
 
 footer {
+    
     height: 100px;
     background-color: $nice-black;
     display: flex;
@@ -86,4 +92,5 @@ footer {
     p {
         color: white;
     }
+    
 }
