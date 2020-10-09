@@ -3,78 +3,57 @@
   margin: 0;
   list-style: none;
   text-decoration: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
   height: 100px;
-  -webkit-box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.2);
-  background-color: white;
-  position: -webkit-sticky;
+  background: #f5f5f5;
+  opacity: 98%;
+  box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 0 10%;
 }
-
 header .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   width: 300px;
 }
-
 header .logo img {
   height: 62.5px;
-  padding-right: 10px;
 }
-
 header .logo h3 a {
   text-transform: uppercase;
   color: #f2703c;
   font-weight: bold;
   font-size: 22px;
+  padding-left: 10px;
 }
-
 header nav .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 0 auto;
 }
-
 header nav .nav-links li {
   padding: 0 20px;
 }
-
 header nav .nav-links li a {
   color: #282828;
+  font-weight: bold;
+  transition: 0.3s;
 }
-
+header nav .nav-links li a:hover {
+  color: black;
+}
 header nav .nav-links li button {
   padding: 9px 25px;
   background-color: #f2703c;
@@ -82,14 +61,11 @@ header nav .nav-links li button {
   border-radius: 50px;
   font-size: 16px;
   cursor: pointer;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 header nav .nav-links li button:hover {
-  background-color: #da6900;
+  background-color: #ff7b00;
 }
-
 header nav .nav-links li .cta button {
   color: white;
 }
@@ -101,24 +77,53 @@ header nav .nav-links li .cta button {
 main {
   height: 100vh;
 }
+main .showcase {
+  height: 500px;
+  background-image: url("/images/static-imgs/repair2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .showcase h1, main .showcase h2 {
+  font-weight: bolder;
+  color: #f3f3f3;
+  text-shadow: black 0px 0px 20px;
+  font-family: "Poppins", sans-serif;
+}
+main .showcase h1 {
+  font-size: 76px;
+}
+main .showcase h2 {
+  font-size: 48px;
+}
 
 footer {
   height: 100px;
   background-color: #282828;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
-
 footer p {
   color: white;
 }
+footer .footer-social-media {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-social-media a img {
+  padding: 5px 0;
+  height: 40px;
+}
+
+.wrapper {
+  display: flex;
+  height: 100px;
+  margin-left: calc((100% - 75%) / 2);
+  width: 75%;
+  align-self: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=index.css.map */
