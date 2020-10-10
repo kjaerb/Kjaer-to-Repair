@@ -6,12 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="styles/fullpage.min.css">
     <link rel="stylesheet" href="styles/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <title>Kjaer to Repair</title>
 </head>
 <body>
+    <img class="pointer-up" src="/images/pointer-up.svg" alt="pointer-up">
     <header>
         <div class="logo">
             <img src="images/logo.png" alt="logo">
@@ -33,36 +35,47 @@
     </header>
 
     <main>
-        
-    </main>
-
-    <footer>
-        <div class="wrapper">
-            <nav class="footer-navigation">
-                <ul>
-                    <li><a href="#">Handelsbetingelser</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                    <li><a href="#">Om os</a></li>
-                    <li><a href="#">Priser</a></li>
-                </ul>
-                <div class="footer-text">
-                    <p>Ophavsrettigheder &copy; Kjaer to Repair
-                        <script>new Date().getFullYear()>2000&&document.write(""+new Date().getFullYear());</script>
-                    </p>
-                    <p>CVR - 40870490</p>
-                </div>
-            </nav>
-            <div class="footer-social-media">
-                <a href="https://www.instagram.com/kjaertorepair/" target="_blank">
-                    <img src="images/instagram.png" alt="instagram">
-                </a>
-                <a href="https://www.facebook.com/kjaertorepair" target="_blank">
-                    <img src="images/facebook.png" alt="facebook">
-                </a>
+        <div id="fullpage">
+            <div class="section s1">
+                <h1>Reperationer</h1>
+            </div>
+            <div class="section s2">
+                <h1>Eksempler</h1>
+            </div>
+            <div class="section s3">
+                <h1>Om os</h1>
+            </div>
+            <div class="section fp-auto-height">
+                <footer class="footer">
+                    <div class="footer-wrapper">
+                        <nav class="footer-navigation">
+                            <ul>
+                                <li><a href="#">Handelsbetingelser</a></li>
+                                <li><a href="#">Kontakt</a></li>
+                                <li><a href="#">Om os</a></li>
+                                <li><a href="#">Priser</a></li>
+                            </ul>
+                            <div class="footer-text">
+                                <p>Ophavsrettigheder &copy; Kjaer to Repair
+                                    <script>new Date().getFullYear()>2000&&document.write(""+new Date().getFullYear());</script>
+                                </p>
+                                <p>CVR - 40870490</p>
+                            </div>
+                        </nav>
+                        <div class="footer-social-media">
+                            <a href="https://www.instagram.com/kjaertorepair/" target="_blank">
+                                <img src="images/instagram.png" alt="instagram">
+                            </a>
+                            <a href="https://www.facebook.com/kjaertorepair" target="_blank">
+                                <img src="images/facebook.png" alt="facebook">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
-    </footer>
-
+        <script src="js/fullpage.min.js"></script>
+    </main>
     <script src="js/index.js"></script>
 </body>
 </html>
