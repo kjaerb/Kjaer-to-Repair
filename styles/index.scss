@@ -1,6 +1,8 @@
 //Reset SCSS
 
-@import "variables.scss";
+@import "colors.scss";
+@import "sizes.scss";
+@import "transition.scss";
 
 * {
     padding: 0;
@@ -69,34 +71,37 @@ header {
                         color: black;
                     }
                 }
-                button {
-                    padding: 9px 25px;
-                    background-color: $orange;
-                    border: none;
-                    border-radius: 50px;
-                    font-size: 16px;
-                    cursor: pointer;
-                    transition: $default-transition;
-                    &:hover {
-                        background-color: $orange-darker;
-                    }
-                }
-                .cta {
-                    button {
-                        color: white;                    
-                        }
-                    }
-                }
             }
         }
     }
-    .burger {
-        display: none;
-    }
+}
+
+.burger {
+    display: none;
+}
 
 main {
-    .s1, .s2, .s3 {
-        text-align: center;
+    h1 {
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%, -20%);
+    }
+    .section-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30%;
+        margin: 0 0 10em 5em;
+        p {
+            color: $paragraph-color;
+            text-align: left;
+            font-size: 25px;
+            padding-bottom: 1em;
+        }
+        button {
+            height: 40px;
+        }
     }
 }
 
@@ -147,8 +152,8 @@ main {
             filter: invert(70%);
             a {
                 img {
-                padding: 5px 0;
-                height: 40px;
+                margin: 5px 0;
+                height: 2.5em;
                 transition: $default-transition;
                 &:hover {
                     filter: invert(50%)
@@ -157,5 +162,23 @@ main {
             }
         }
     }
+}
+
+button {
+    padding: 9px 25px;
+    background-color: $orange;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: $default-transition;
+    &:hover {
+        background-color: $orange-darker;
+    }
+}
+.button {
+    button {
+        color: white;                    
+        }
 }
 
