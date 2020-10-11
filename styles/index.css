@@ -1,3 +1,19 @@
+/*
+Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {...}
+
+Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {...}
+
+Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {...}
+
+Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...}
+
+Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {...}
+*/
 * {
   padding: 0;
   margin: 0;
@@ -162,6 +178,165 @@ button:hover {
 
 .button button {
   color: white;
+}
+
+@media only screen and (min-width: 992px) {
+  .pointer-up {
+    z-index: 1;
+    position: fixed;
+    height: 4rem;
+    left: 93%;
+    top: 88%;
+    opacity: 70%;
+    cursor: pointer;
+  }
+
+  header {
+    z-index: 1;
+    height: 12vh;
+    background: #f5f5f5;
+    opacity: 98%;
+    box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+  }
+  header .logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 300px;
+  }
+  header .logo img {
+    height: 62.5px;
+  }
+  header .logo h3 a {
+    text-transform: uppercase;
+    color: #f2703c;
+    font-weight: bold;
+    font-size: 22px;
+    padding-left: 10px;
+  }
+  header nav .nav-links {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+  header nav .nav-links li {
+    padding: 0 20px;
+  }
+  header nav .nav-links li a {
+    color: #282828;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  header nav .nav-links li a:hover {
+    color: black;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  main h1 {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -20%);
+  }
+  main .section-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    margin: 0 0 10em 5em;
+  }
+  main .section-text p {
+    color: black;
+    text-align: left;
+    font-size: 25px;
+    padding-bottom: 1em;
+  }
+  main .section-text button {
+    height: 40px;
+  }
+
+  .footer {
+    margin-top: -12vh;
+    height: calc(12vh * 2);
+    background-color: #282828;
+  }
+  .footer .footer-wrapper {
+    display: flex;
+    height: 12vh;
+    margin-left: calc((100% - 75%) / 2);
+    width: 75%;
+    align-self: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .footer .footer-wrapper .footer-navigation ul {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 2px solid #424242;
+  }
+  .footer .footer-wrapper .footer-navigation ul li {
+    padding: 0 10px;
+  }
+  .footer .footer-wrapper .footer-navigation ul li a {
+    color: white;
+    font-size: 1em;
+    transition: 0.3s;
+  }
+  .footer .footer-wrapper .footer-navigation ul li a:hover {
+    color: #cfcfcf;
+  }
+  .footer .footer-wrapper .footer-navigation .footer-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  .footer .footer-wrapper .footer-navigation .footer-text p {
+    padding: 0 10px;
+    color: white;
+    font-size: 1em;
+  }
+  .footer .footer-wrapper .footer-social-media {
+    display: flex;
+    flex-direction: column;
+    filter: invert(70%);
+  }
+  .footer .footer-wrapper .footer-social-media a img {
+    margin: 5px 0;
+    height: 2.5em;
+    transition: 0.3s;
+  }
+  .footer .footer-wrapper .footer-social-media a img:hover {
+    filter: invert(50%);
+  }
+
+  button {
+    padding: 9px 25px;
+    background-color: #f2703c;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  button:hover {
+    background-color: #ff7b00;
+  }
+
+  .button button {
+    color: white;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
