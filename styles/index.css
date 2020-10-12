@@ -19,9 +19,8 @@ Extra large devices (large laptops and desktops, 1200px and up)
   margin: 0;
   list-style: none;
   text-decoration: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 .pointer-up {
@@ -40,125 +39,96 @@ header {
   height: 12vh;
   background: #f5f5f5;
   opacity: 98%;
-  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  position: -webkit-sticky;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   padding: 0 2rem;
 }
-
 header .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex: 1;
+  align-content: center;
+  align-items: center;
 }
-
 header .logo img {
   height: 4rem;
 }
-
 header .logo h3 a {
   text-transform: uppercase;
   color: #f2703c;
   font-weight: bold;
   font-size: 22px;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
 }
-
 header nav .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex: 2;
+  align-items: center;
   margin: 0 auto;
 }
-
 header nav .nav-links li {
   padding: 0 2rem;
 }
-
 header nav .nav-links li a {
   color: #282828;
   font-weight: bold;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 header nav .nav-links li a:hover {
   color: black;
 }
-
 header .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 .burger {
   display: none;
 }
 
-main h1 {
+main #fullpage section h1 {
   position: absolute;
   left: 50%;
   top: 15%;
-  -webkit-transform: translate(-50%, -15%);
-          transform: translate(-50%, -15%);
+  transform: translate(-50%, -15%);
 }
-
-main .section-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
+main #fullpage section .section-content {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 30%;
-  margin: 0 0 10rem 5rem;
+  height: 30vh;
+  width: 75%;
+  margin-left: calc((100% - 75%) / 2);
+  margin-bottom: 5rem;
 }
-
-main .section-text p {
+main #fullpage section .section-content .section-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main #fullpage section .section-content .section-text p {
   color: black;
   text-align: left;
   font-size: 25px;
   padding-bottom: 1rem;
 }
-
-main .section-text button {
+main #fullpage section .section-content .section-text button {
   height: 3rem;
+}
+main #fullpage section .section-content .section-picture {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+main #fullpage section .section-content .section-picture .about-us-headshot {
+  height: 15rem;
+  align-self: center;
+  border-radius: 50%;
 }
 
 .footer {
@@ -166,85 +136,53 @@ main .section-text button {
   height: calc(12vh * 2);
   background-color: #282828;
 }
-
 .footer .footer-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 12vh;
   margin-left: calc((100% - 75%) / 2);
   width: 75%;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-self: center;
+  align-items: center;
+  justify-content: space-around;
 }
-
 .footer .footer-wrapper .footer-navigation ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 10px 0;
   border-bottom: 2px solid #424242;
 }
-
 .footer .footer-wrapper .footer-navigation ul li {
   padding: 0 1rem;
 }
-
 .footer .footer-wrapper .footer-navigation ul li a {
   color: white;
   font-size: 1rem;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .footer .footer-wrapper .footer-navigation ul li a:hover {
   color: #cfcfcf;
 }
-
 .footer .footer-wrapper .footer-navigation .footer-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 1rem 0;
 }
-
 .footer .footer-wrapper .footer-navigation .footer-text p {
   padding: 0 1rem;
   color: white;
   font-size: 1rem;
 }
-
 .footer .footer-wrapper .footer-social-media {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-filter: invert(70%);
-          filter: invert(70%);
-  height: 100%;
+  flex-direction: column;
+  filter: invert(70%);
 }
-
 .footer .footer-wrapper .footer-social-media a img {
   margin: 5px 0;
   height: 1.5rem;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .footer .footer-wrapper .footer-social-media a img:hover {
-  -webkit-filter: invert(50%);
-          filter: invert(50%);
+  filter: invert(50%);
 }
 
 button {
@@ -254,10 +192,8 @@ button {
   border-radius: 50px;
   font-size: 16px;
   cursor: pointer;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 button:hover {
   background-color: #ff7b00;
 }
@@ -265,4 +201,5 @@ button:hover {
 .button button {
   color: white;
 }
+
 /*# sourceMappingURL=index.css.map */

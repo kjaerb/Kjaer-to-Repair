@@ -35,13 +35,18 @@ new fullpage('#fullpage', {
     loopBottom: true,
     loopTop: true,
     onLeave: (origin, destination, direction) => {
+        const tl = new TimelineMax({delay: 0.5});
         //Animates h1
         const section = destination.item;
         const title = section.querySelector("h1");
-        const tl = new TimelineMax({delay: 0.5});
         if(title !== null && origin.isLast === false) {
             tl.fromTo(title, 0.5, { y: "50", opacity: 0}, { y: "0", opacity: 1})
         }
+        //Animates pictures
+        const sectionContent = section.querySelector(".section-content");
+        if(destination.index === 2 && origin.isLast === false) {
+            const tl = new TimelineMax({delay: 1});
+            tl.fromTo(sectionContent, 0.5, { y: "50", opacity: 0 }, { y: "0", opacity: 1});
+        }
     }
-    
 });
