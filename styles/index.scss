@@ -36,17 +36,16 @@ header {
     left: 0;
     right: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 10%;
+    padding: 0 2rem;
     .logo {
         display: flex;
         flex: 1;
         align-content: center;
         align-items: center;
-        width: 300px;
         img {
-            height: 62.5px;
+            height: 4rem;
         }
         h3 {
             a {
@@ -54,7 +53,7 @@ header {
             color: $orange;
             font-weight: bold;
             font-size: 22px;
-            padding-left: 10px;
+            padding-left: .5rem;
             }
         }
     }
@@ -65,7 +64,7 @@ header {
             align-items: center;
             margin: 0 auto;
             li {
-                padding: 0 20px;
+                padding: 0 2rem;
                 a {
                     color: $nice-black;
                     font-weight: bold;
@@ -92,23 +91,23 @@ main {
     h1 {
         position: absolute;
         left: 50%;
-        top: 20%;
-        transform: translate(-50%, -20%);
+        top: 15%;
+        transform: translate(-50%, -15%);
     }
     .section-text {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         width: 30%;
-        margin: 0 0 10em 5em;
+        margin: 0 0 10rem 5rem;
         p {
             color: $paragraph-color;
             text-align: left;
             font-size: 25px;
-            padding-bottom: 1em;
+            padding-bottom: 1rem;
         }
         button {
-            height: 40px;
+            height: 3rem;
         }
     }
 }
@@ -132,7 +131,7 @@ main {
                 padding: 10px 0;
                 border-bottom: 2px solid rgb(66, 66, 66);
                 li {
-                    padding: 0 10px;
+                    padding: 0 1rem;
                     a {
                         color: white;
                         font-size: $footer-text-size;
@@ -146,9 +145,9 @@ main {
             .footer-text {
                 display: flex;
                 justify-content: space-between;
-                padding: 10px 0;
+                padding: 1rem 0;
                 p {
-                    padding: 0 10px;
+                    padding: 0 1rem;
                     color: white;
                     font-size: $footer-text-size;
                 }
@@ -158,10 +157,11 @@ main {
             display: flex;
             flex-direction: column;
             filter: invert(70%);
+            height: 100%;
             a {
                 img {
                 margin: 5px 0;
-                height: 2.5em;
+                height: 1.5rem;
                 transition: $default-transition;
                 &:hover {
                     filter: invert(50%)
