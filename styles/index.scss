@@ -41,7 +41,7 @@ header {
     padding: 0 10%;
     .logo {
         display: flex;
-        justify-content: center;
+        flex: 1;
         align-content: center;
         align-items: center;
         width: 300px;
@@ -61,6 +61,7 @@ header {
     nav {
         .nav-links {
             display: flex;
+            flex: 2;
             align-items: center;
             margin: 0 auto;
             li {
@@ -75,6 +76,11 @@ header {
                 }
             }
         }
+    }
+    .button {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
     }
 }
 

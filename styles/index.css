@@ -51,7 +51,7 @@ header {
 }
 header .logo {
   display: flex;
-  justify-content: center;
+  flex: 1;
   align-content: center;
   align-items: center;
   width: 300px;
@@ -68,6 +68,7 @@ header .logo h3 a {
 }
 header nav .nav-links {
   display: flex;
+  flex: 2;
   align-items: center;
   margin: 0 auto;
 }
@@ -81,6 +82,11 @@ header nav .nav-links li a {
 }
 header nav .nav-links li a:hover {
   color: black;
+}
+header .button {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 .burger {
