@@ -1,0 +1,13 @@
+.header {
+    height: 50px;
+    background-color: $nav-color;
+    @include FlexCenter;
+    .wrapper {
+        max-width: $wrapper-desktop;
+        @include FlexCenter;
+        .navlink {
+            padding: 0 1rem;
+        }
+    }
+    
+}
