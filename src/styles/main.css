@@ -19,8 +19,14 @@
 
 .navlink li {
   list-style: none;
-  color: white;
+  color: #d6d6d6;
   text-align: center;
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+}
+
+.navlink li:hover {
+  color: #f0f0f0;
 }
 
 .header {
@@ -38,7 +44,19 @@
 }
 
 .header .wrapper {
-  max-width: 1170px;
+  width: 1170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .wrapper .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,12 +68,18 @@
           align-items: center;
 }
 
-.header .wrapper .navlink {
+.header .wrapper .header-nav .navlink {
   padding: 0 1rem;
 }
 
 .logo {
   font-size: 1.25em;
-  color: white;
+  color: #d6d6d6;
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+}
+
+.logo:hover {
+  color: #f0f0f0;
 }
 /*# sourceMappingURL=main.css.map */

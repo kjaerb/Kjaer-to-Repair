@@ -2,7 +2,11 @@
     text-decoration: none;
     li {
         list-style: none;
-        color: $white;
+        color: $navlink;
         text-align: center;
+        transition: color 200ms ease;
+        &:hover {
+            color: $nice-white;
+        }
     }
 }

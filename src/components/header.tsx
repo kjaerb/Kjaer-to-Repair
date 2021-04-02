@@ -7,12 +7,14 @@ const Header = () => {
         <div className="header">
             <div className="wrapper">
                 <Logo />
-                <NavLink text="iPhone"/>
-                <NavLink text="iPad"/>
-                <NavLink text="Macbook"/>
-                <NavLink text="Min Enhed"/>
-                <NavLink text="Om Os"/>
-                <NavLink text="Grøn Omstilling"/>
+                <nav className="header-nav">
+                    <NavLink text="iPhone"/>
+                    <NavLink text="iPad"/>
+                    <NavLink text="Macbook"/>
+                    <NavLink text="Min Enhed"/>
+                    <NavLink text="Om Os"/>
+                    <NavLink text="Grøn Omstilling"/>
+                </nav>
             </div>
         </div>
     );
