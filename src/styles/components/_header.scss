@@ -1,16 +1,19 @@
 .header {
     height: 50px;
     background-color: $nav-color;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
     @include FlexCenter;
     .wrapper {
+        max-width: $wrapper-desktop;
         width: $wrapper-desktop;
-        @include FlexBetween;
-        .header-nav {
-            @include FlexCenter;
-            .navlink {
-                padding: 0 1rem;
-            }
-        }
-        
+        @include FlexBetween;     
+        .search-icon {
+            filter: invert(1);
+            height: 1.5rem;
+            cursor: pointer;
+        } 
     }
 }

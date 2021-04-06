@@ -1,12 +1,46 @@
-.navlink {
-    text-decoration: none;
+.navlink, .navlinkEV {
+    @include FlexCenter;
     li {
         list-style: none;
         color: $navlink;
         text-align: center;
         transition: color 200ms ease;
+        text-overflow: clip;
+        white-space: nowrap;
         &:hover {
             color: $nice-white;
         }
+    }
+    img {
+        height: 16px;
+    }
+}
+
+.navlinkEV {
+    li {
+        color: $navlinkEV-color;
+        &:hover {
+            color: $light-green;
+        }
+    }
+    img {
+        height: 1.55rem;
+        transform: translate(-6px, -7px);
+    }
+}
+
+.logo {
+    font-size: 1.25em;
+    color: $navlink;
+    transition: color 200ms ease;
+    &:hover {
+        color: $nice-white;
+        span.repair {
+            color: $orange;
+        }
+    }
+    span.repair {
+        color: $logoname-hover;
+        transition: color 200ms ease;
     }
 }
